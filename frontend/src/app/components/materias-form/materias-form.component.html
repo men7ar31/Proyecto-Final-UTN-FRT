@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-sm-4 offset-sm-4">
+      <div class="card card-body">
+  
+        <form (submit)="submitMateria()">
+          <div class="form-group">
+            <input type="text" name="name" [(ngModel)]="materias.name" class="form-control" placeholder="Nombre materia" autofocus>
+          </div>
+          <div class="form-group">
+            <input type="text" name="plan" [(ngModel)]="materias.plan" class="form-control" placeholder="Plan">
+          </div>
+          <div class="form-group">
+            <input type="text" name="año" [(ngModel)]="materias.ano" class="form-control" placeholder="Año">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Guardar
+          </button>
+        </form>
+      </div>
+      <br>
+      <div style="margin-left : 20px;">
+        <h5>Si no conoce su materia o plan de estudio haga click <a href="https://utn.edu.ar/images/oferta_academica/planes_estudio/Plan-de-Estudio-de-Ingenieria-Civil.pdf">aqui</a></h5>
+      </div>
+    </div>
+  </div>

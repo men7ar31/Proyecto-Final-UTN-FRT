@@ -1,0 +1,15 @@
+<h1>Materias</h1>
+<div class="row">
+    <div class="col-md-4" *ngFor="let materia of materias">
+        <div class="card">
+            <div class="card-body">
+                <h3>{{materia.name}}</h3>
+                <p>Plan: {{materia.plan}}</p>
+            </div>
+            <div class="card-footer d-flex">
+                Año: {{materia.ano | date: 'shortDate'}}
+                <button class="btn btn-danger ml-auto" (click)="deleteMateria(materia._id!)">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
